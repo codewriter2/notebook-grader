@@ -19,61 +19,6 @@ git clone https://github.com/codewriter2/notebook-grader.git
 cd notebook-grader
 ```
 
----
-
-## 🐍 2단계: Python 설치 확인
-
-### Python이 설치되어 있는지 확인
-
-1. **Windows**: 시작 메뉴 → `cmd` 또는 `PowerShell` 실행
-2. 다음 명령어 입력:
-   ```bash
-   python --version
-   ```
-
-3. **결과 확인**:
-   - ✅ `Python 3.7.0` 이상 표시 → 다음 단계로
-   - ❌ 오류 발생 → Python 설치 필요
-
-### Python 설치 (필요한 경우)
-
-1. https://www.python.org/downloads/ 접속
-2. 최신 버전 다운로드 (예: Python 3.11)
-3. 설치 시 **⚠️ 중요**: `Add Python to PATH` 체크박스 반드시 선택!
-4. 설치 완료 후 컴퓨터 재시작
-
----
-
-## 📦 3단계: 필수 패키지 설치
-
-### 명령 프롬프트 또는 PowerShell에서 실행
-
-1. 다운로드한 폴더로 이동:
-   ```bash
-   cd C:\Users\내이름\Documents\notebook-grader-main
-   ```
-
-2. 필수 패키지 설치:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. 설치 완료 확인:
-   ```bash
-   pip list
-   ```
-   - `nbformat`, `pandas`, `openpyxl`이 목록에 있으면 성공!
-
-### 설치 중 오류가 발생하면?
-
-**오류**: `pip: command not found`
-- **해결**: Python 재설치 시 `Add Python to PATH` 선택
-
-**오류**: `Permission denied`
-- **해결**: 관리자 권한으로 실행 또는 `pip install --user -r requirements.txt`
-
----
-
 ## 📁 4단계: 폴더 구조 준비
 
 프로그램이 있는 폴더에 학생 제출물 폴더를 만듭니다:
