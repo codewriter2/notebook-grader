@@ -22,18 +22,59 @@ Jupyter Notebook 형식의 학생 과제를 자동으로 채점하는 Python 프
 
 ### 필수 요구사항
 
-- Python 3.7 이상
-- 필수 라이브러리:
-  ```bash
-  pip install nbformat pandas openpyxl
-  ```
+- **Python 3.7 이상** ([다운로드](https://www.python.org/downloads/))
+- Git (선택사항, ZIP 다운로드로도 가능)
 
-### 설치
+### 방법 1: Git Clone (권장)
+
+Git이 설치되어 있다면 이 방법을 사용하세요:
 
 ```bash
-git clone https://github.com/yourusername/jupyter-auto-grader.git
-cd jupyter-auto-grader
+# 1. 저장소 복제
+git clone https://github.com/codewriter2/notebook-grader.git
+
+# 2. 폴더로 이동
+cd notebook-grader
+
+# 3. 필수 패키지 설치
 pip install -r requirements.txt
+```
+
+### 방법 2: ZIP 다운로드
+
+Git이 없다면 ZIP 파일로 다운로드하세요:
+
+1. **GitHub 페이지 방문**
+   - https://github.com/codewriter2/notebook-grader
+
+2. **다운로드**
+   - 초록색 `Code` 버튼 클릭
+   - `Download ZIP` 선택
+   - 원하는 위치에 압축 해제
+
+3. **패키지 설치**
+   ```bash
+   # 압축 해제한 폴더로 이동
+   cd notebook-grader-main
+   
+   # 필수 패키지 설치
+   pip install -r requirements.txt
+   ```
+
+### 설치 확인
+
+설치가 제대로 되었는지 확인:
+
+```bash
+python batch_grade.py --help
+```
+
+또는 Python에서:
+
+```python
+import nbformat
+import pandas
+print("설치 완료!")
 ```
 
 ## 📖 사용 방법
